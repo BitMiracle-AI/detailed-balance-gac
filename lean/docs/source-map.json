@@ -1,0 +1,580 @@
+{
+  "upstream_revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "identifier_renames": [
+    [
+      "Problem326Aux",
+      "PersistenceAux"
+    ],
+    [
+      "Problem326",
+      "Persistence"
+    ],
+    [
+      "Barrier",
+      "Confinement"
+    ],
+    [
+      "BarrierConstruction",
+      "Barrier"
+    ],
+    [
+      "AffineBarrierData",
+      "BarrierData"
+    ],
+    [
+      "exists_affineBarrierData",
+      "exists_barrier_data"
+    ],
+    [
+      "CutFlux",
+      "Cuts"
+    ],
+    [
+      "global_bounded_persistent_solution",
+      "bounded_persistent_of_weaklyReversible"
+    ],
+    [
+      "threshold_flux_nonneg_of_source_order",
+      "cut_flux_nonneg_of_ordered_sources"
+    ],
+    [
+      "massAction_inward_of_monomial_order",
+      "massAction_points_inward_of_order"
+    ],
+    [
+      "monomial_le_rpow_mul_of_gap",
+      "monomial_bound_of_exponent_gap"
+    ],
+    [
+      "exists_sign_tolerance_function",
+      "exists_sign_margin_function"
+    ],
+    [
+      "exists_uniform_dot_gap",
+      "exists_uniform_sign_gap"
+    ],
+    [
+      "uniform_affine_data_of_full_certificates",
+      "uniform_data_of_full_certificates"
+    ],
+    [
+      "monotoneOn_finset_inf'_of_active_deriv_nonneg",
+      "finite_minimum_monotone_of_active_slopes"
+    ],
+    [
+      "exists_global_solution_of_compact_trapping",
+      "global_solution_of_compact_trap"
+    ],
+    [
+      "exists_global_massAction_of_compact_trapping",
+      "global_massAction_of_compact_trap"
+    ],
+    [
+      "exists_fullCertificate",
+      "exists_full_certificate"
+    ],
+    [
+      "FullCertificate.uniform_activity",
+      "FullCertificate.uniform_activity_bound"
+    ]
+  ],
+  "files": [
+    {
+      "upstream": "OAI/Analysis/MassAction/ActiveBranchMinimum.lean",
+      "upstream_sha256": "e4d88e975d85ab335243df0edf28fac290c30121450a57ecb5aa5ca5b07081c4",
+      "path": "GAC/Persistence/Confinement/ActiveBranches.lean",
+      "module": "GAC.Persistence.Confinement.ActiveBranches",
+      "sha256": "f4afc12afee10521a1aa5c87a85ab5bb1e417be382c4e928204e29f5adefd7a7"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/ActivityLimits.lean",
+      "upstream_sha256": "0a37bbe13cd81047245e02b0a7aba6ad51615fe521a73cd8e7b435e34fb21599",
+      "path": "GAC/Persistence/Approximation/Local/ActivityLimitSets.lean",
+      "module": "GAC.Persistence.Approximation.Local.ActivityLimitSets",
+      "sha256": "4e32271a70128a0948dd7db20e6a9ce88799faf8c63f8dc672fcae67e41b152f"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineApproximation.lean",
+      "upstream_sha256": "a4de726ad3bfd1e984f9764d68b09b884772fb27f622d3deed32ad0fc4fe35cd",
+      "path": "GAC/Persistence/Approximation/Uniform/ActivityCompactness.lean",
+      "module": "GAC.Persistence.Approximation.Uniform.ActivityCompactness",
+      "sha256": "ec71ce32a9dd827d23d009a11909ea3d869877ce8822f188365b2eae57f3ea3a"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineCertificateBridge.lean",
+      "upstream_sha256": "bfabe33c319da03f29c4473af8a0d6477f7af7babf143b3a9ec07b82eee829c0",
+      "path": "GAC/Persistence/Approximation/Layers/LocalFromLabels.lean",
+      "module": "GAC.Persistence.Approximation.Layers.LocalFromLabels",
+      "sha256": "04a73d0c0a242f6c5616df75ea170eb5967f4c684ba14c0a8bc9f37ec67fe1ca"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineCertificateGluing.lean",
+      "upstream_sha256": "0ed6785a1d9bb012d39d4de967dbf8f296d4f7317c215c81b2a5d1b97dc09f9e",
+      "path": "GAC/Persistence/Approximation/Gluing/FullFromLocal.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.FullFromLocal",
+      "sha256": "558a4d5c8e64af1425bba411029d0ebe07c25eeb6aa802c290f5ea6076ab708d"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineCertificates.lean",
+      "upstream_sha256": "ba35bbd4f7463f7e9af6c4303cd6aa0cbe8d5e8504163045cc9e803c7c5e5288",
+      "path": "GAC/Persistence/Approximation/Layers/Certificates.lean",
+      "module": "GAC.Persistence.Approximation.Layers.Certificates",
+      "sha256": "f940aae24af4aaa20dfd1338cb494e9196373276465a7fb73d96e76d145e5c6f"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineExistence.lean",
+      "upstream_sha256": "435b26503bf1faa5d771a968f88dc0fd81b2ad35b8d5e71529df1b3746429786",
+      "path": "GAC/Persistence/Approximation/Gluing/FullExistence.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.FullExistence",
+      "sha256": "c8f96d42fa5677909c84a2d553e57bf78fab039c8eb304cb8c046d6eb7cdedc7"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineFamilyGluing.lean",
+      "upstream_sha256": "9c8e67330a2f4f03645000e9e6957b71e59566463360928bccd496faec4bf283",
+      "path": "GAC/Persistence/Approximation/Gluing/ShiftedFamilies.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.ShiftedFamilies",
+      "sha256": "e37ae7a529c6b7ff456024e738007890f619a8cfe55257f7647a3344610b6ee8"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineGlobalAssembly.lean",
+      "upstream_sha256": "3374821aeee4f65af0769e1a9cba0b28d062f6ce9ecf6e2bddcb3844fb93a46d",
+      "path": "GAC/Persistence/Approximation/Gluing/FamilyAssembly.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.FamilyAssembly",
+      "sha256": "3252dd551899d5f5d0e24e1c2a4dce00072f7d37ff15603e28086011d789c6d2"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineGlobalGluing.lean",
+      "upstream_sha256": "9a34128d07adc834e3a72a62a03abe7d757edfa2ecd7fb50bae841e44c82c576",
+      "path": "GAC/Persistence/Approximation/Gluing/GlobalGluing.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.GlobalGluing",
+      "sha256": "91cd07d3e98ebbaf2e0250cbabc2597078aa5fa7067a6da2c97d32edf5132a69"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineGluing.lean",
+      "upstream_sha256": "4966ab7b554b6f0904dc789f257de98fdf73e4f2b36015200cefc122fafbe814",
+      "path": "GAC/Persistence/Approximation/Gluing/CutComparison.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.CutComparison",
+      "sha256": "d1ef441e41636d8970c6ee7cfa3ee08ded29f0c73f67f29c1b4938413c773d38"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineLayers.lean",
+      "upstream_sha256": "ecbe0539d180ecdca32671ff8149ae2676e644b8ec0667d6d4dbec78b4b93999",
+      "path": "GAC/Persistence/Approximation/Layers/LayerCertificates.lean",
+      "module": "GAC.Persistence.Approximation.Layers.LayerCertificates",
+      "sha256": "1f932282ba823d7d21d8630bf5e13d68babebf7432e7e8c2d6b2217977b9eb7c"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineLimitSet.lean",
+      "upstream_sha256": "d1ecdd9e801bee860da8b25a30a85fc4745996e4cb034001c444d74a32695002",
+      "path": "GAC/Persistence/Approximation/Local/PositiveLimitSets.lean",
+      "module": "GAC.Persistence.Approximation.Local.PositiveLimitSets",
+      "sha256": "94b73beea540837740722d9154030680500f1a5dce76292d7a082ae90612f799"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineLocalBand.lean",
+      "upstream_sha256": "e77ff037488eb730dd35d13ce4b0a3b4d49356c7e9b8233fa3b9f1d990ca54f3",
+      "path": "GAC/Persistence/Approximation/Local/MinimumBand.lean",
+      "module": "GAC.Persistence.Approximation.Local.MinimumBand",
+      "sha256": "dcb66adffff26425f56124a37117d47826122455f1896c1acd58f402e0e6fbe1"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineLocalConstructor.lean",
+      "upstream_sha256": "49947ce72a29043567ca090e58cc2783c045530485ab561c4cb7aafa6a89976b",
+      "path": "GAC/Persistence/Approximation/Layers/LocalFromLayers.lean",
+      "module": "GAC.Persistence.Approximation.Layers.LocalFromLayers",
+      "sha256": "11f3e290cfed7402ff2dcc6d039f93bf6b12e376ad58f2c16ec609d371d98466"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineLocalization.lean",
+      "upstream_sha256": "6a96189f87b614afe423debe8adc7afffc87a468f2052c60a29006313a386c38",
+      "path": "GAC/Persistence/Approximation/Local/AsymptoticActivity.lean",
+      "module": "GAC.Persistence.Approximation.Local.AsymptoticActivity",
+      "sha256": "005af578593b8392f249bcc3bf686329f0df4676c275c28d46caff0da6f5f36c"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineNeighborhood.lean",
+      "upstream_sha256": "3c15aa3c415b4bb02afde8c6fe052475e9e0bda10314f478709436868341b652",
+      "path": "GAC/Persistence/Approximation/Local/CubeNeighborhood.lean",
+      "module": "GAC.Persistence.Approximation.Local.CubeNeighborhood",
+      "sha256": "363f4e218c738aa878ae5d1eefcad1cf28d2963af6fcd3ceb2e0dc05f27ec1ff"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffinePolytope.lean",
+      "upstream_sha256": "04a7d3e02cdda94bd3dc185c9bda2957d2ac3d83f5b90939fd04b95ed6f76ef4",
+      "path": "GAC/Persistence/Barrier/LabelPolytope.lean",
+      "module": "GAC.Persistence.Barrier.LabelPolytope",
+      "sha256": "c9892f6856a39f372e2100153221355fc04e31defb5337e836f526be5cfddf41"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineSignGap.lean",
+      "upstream_sha256": "0bf9b06398b11ca2511057a9de49b2b9e54d6ea128d3bfb97e614295e9bcd740",
+      "path": "GAC/Persistence/Asymptotics/DotSignGap.lean",
+      "module": "GAC.Persistence.Asymptotics.DotSignGap",
+      "sha256": "80b97ec150bd67b57df83c418031df108476e1429db993383575b5963288849f"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineTrajectory.lean",
+      "upstream_sha256": "12738d63bd63c49f302a9551b0fde0bdcaf7880a139fa997c7de13b3dc794a46",
+      "path": "GAC/Persistence/Confinement/MinimumAlongCurves.lean",
+      "module": "GAC.Persistence.Confinement.MinimumAlongCurves",
+      "sha256": "afe73ae0bd7cdde3ec0b128ac40978b6a251ea51b66f55d47ebff4b136fc5a27"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/AffineUniformCertificate.lean",
+      "upstream_sha256": "bb268322dc5298d774a364b3c3384fe348b1b32701d2503da1ee9ffd1b11b9ed",
+      "path": "GAC/Persistence/Approximation/Uniform/FromFullCertificates.lean",
+      "module": "GAC.Persistence.Approximation.Uniform.FromFullCertificates",
+      "sha256": "df32c836809d377c770537a741a69a1088c9610c65cc19d2ac01847b7c282564"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/BarrierGeometry.lean",
+      "upstream_sha256": "0e22dd6dd3957f35d1af059c707cc6de77b6f9d58ce1aa4b968412fb2d515f0e",
+      "path": "GAC/Persistence/Barrier/PlateauCompactness.lean",
+      "module": "GAC.Persistence.Barrier.PlateauCompactness",
+      "sha256": "53b7219dfafb44ec5654cbdf3efabfe616b754898b9492f446bfadaacfadff27"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/BarrierInvariance.lean",
+      "upstream_sha256": "257634a1904823b9d484d133eaae816158ec65eff7a70a5824fe7cf470a31b75",
+      "path": "GAC/Persistence/Confinement/ForwardInvariance.lean",
+      "module": "GAC.Persistence.Confinement.ForwardInvariance",
+      "sha256": "a81536b842b11e41fd6bee985c7d4d152e140c8b1e098f1eb8261fc21157ba0a"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/BarrierTrapping.lean",
+      "upstream_sha256": "d3701e803dfe65eab025ca5c0d5ddac337d2ba28138afff2fc6d5920be4d7d87",
+      "path": "GAC/Persistence/Confinement/SegmentTrapping.lean",
+      "module": "GAC.Persistence.Confinement.SegmentTrapping",
+      "sha256": "666ea3e4474d2d9dcaeef4a095a2e7d3307c60500460476b0237d0a7c8162133"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/CanonicalLocalConstructor.lean",
+      "upstream_sha256": "1efb9adccd99dac9145a70239d9d6eaaf692574b80fd89f322d030dc02568924",
+      "path": "GAC/Persistence/Approximation/Layers/LocalFromLowerDimension.lean",
+      "module": "GAC.Persistence.Approximation.Layers.LocalFromLowerDimension",
+      "sha256": "a33824aa2281b373784256e808416ec39d4e36857b7c926eeda447e61c1c07f5"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/ClampExtension.lean",
+      "upstream_sha256": "6e56e40f0b170642019b1ebb30581c67183b44718bae90d3a5b009e57a3940a8",
+      "path": "GAC/Persistence/ODE/LipschitzExtension.lean",
+      "module": "GAC.Persistence.ODE.LipschitzExtension",
+      "sha256": "2c6e95c128252646245d016c2da5fede96f32a3e6e31061187efc5eabe91d954"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/CompactBounds.lean",
+      "upstream_sha256": "af82a12a9809255fa2e7902e2e7c5fe3782b5abbf77e9aad3a573b3cea16bb0f",
+      "path": "GAC/Persistence/ODE/PositiveBounds.lean",
+      "module": "GAC.Persistence.ODE.PositiveBounds",
+      "sha256": "af59b79af4bf3bfb5966ed6535dae8b3758e6585b8ff188260ddecbaddb8b363"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/CompactContinuation.lean",
+      "upstream_sha256": "c5238f045e74cb47ead421577b15fd0ac1157b8a24133929c26709df93adb37b",
+      "path": "GAC/Persistence/ODE/CompactTrapping.lean",
+      "module": "GAC.Persistence.ODE.CompactTrapping",
+      "sha256": "9daf0eeb731aa239537a6ced50a1398439c4812ba5a791d17d2d866f599d0638"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/CompactInvariance.lean",
+      "upstream_sha256": "334a790e742ab3a522f63fec3aa272fb3f02dd995567985c79daa8a3c5b1965f",
+      "path": "GAC/Persistence/ODE/InvariantBounds.lean",
+      "module": "GAC.Persistence.ODE.InvariantBounds",
+      "sha256": "b14bdf28e4b50ab6561494f57f7342dec15077fcb3051139f1e6634ada1f81e1"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/CompleteAffine.lean",
+      "upstream_sha256": "b8625a0217ccdc267f49fd31c4502693eda5c66c257173dda66065a2d278ce09",
+      "path": "GAC/Persistence/Approximation/Gluing/FullExistenceAlternative.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.FullExistenceAlternative",
+      "sha256": "034b2781645a63f817d88823486f552d15a12bbd5def9f161e84248ba5b37f0f"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/CoordinateEmbedding.lean",
+      "upstream_sha256": "570cc3932fb556079a60e9476ff71ea2e6887da53a72d4e0436fd334ec5decaa",
+      "path": "GAC/Persistence/Approximation/Layers/SubcubeEmbedding.lean",
+      "module": "GAC.Persistence.Approximation.Layers.SubcubeEmbedding",
+      "sha256": "16ecba353c1a4d9f4618c830c2b7830001aa8d6364bb2ee759e8006f5202abd2"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/CutDecomposition.lean",
+      "upstream_sha256": "2665b0f77c67eceb2627425a9e7a499a49afcf1ed23559ca5ef99d2be168d5c8",
+      "path": "GAC/Persistence/Flux/LevelIntegral.lean",
+      "module": "GAC.Persistence.Flux.LevelIntegral",
+      "sha256": "d3a51feac04fb1da8cc1f8bc78e68188b1692e06eb8aed89de4b2edb19e680cd"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/CutFlux.lean",
+      "upstream_sha256": "de3b03283d6706c68fd025f6a16a7d6b63fac182e57767aedfb31905d5f5636a",
+      "path": "GAC/Persistence/Flux/DirectedCuts.lean",
+      "module": "GAC.Persistence.Flux.DirectedCuts",
+      "sha256": "e2324d4deada7fcc042280c9c8a34b3b044164c807a488224b2a887d6638ef77"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/ExponentAsymptotics.lean",
+      "upstream_sha256": "cd5f17d38ca86855b2fe92a10b684a549be10f593e32c74b4f58d798d5908b99",
+      "path": "GAC/Persistence/Asymptotics/VariableExponents.lean",
+      "module": "GAC.Persistence.Asymptotics.VariableExponents",
+      "sha256": "86d266e2563545d0f8fe186b025cb3af359e1eecc9eb2e7a7020de1068ffc7ad"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/FiniteMinimum.lean",
+      "upstream_sha256": "035f902e256da3f4806a4825186c0c974ba6edd35899d6a2fbbd768f41e35721",
+      "path": "GAC/Persistence/Confinement/MinimumMonotonicity.lean",
+      "module": "GAC.Persistence.Confinement.MinimumMonotonicity",
+      "sha256": "cdbe74befaed42e521709dca19e25335f043ef0d811cbb248e544c90a4b2bfc0"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/FirstExit.lean",
+      "upstream_sha256": "5422b4c216282c373ab000584f44ae6d15634abffe327c256bff63df1c081b84",
+      "path": "GAC/Persistence/ODE/FirstBoundaryTime.lean",
+      "module": "GAC.Persistence.ODE.FirstBoundaryTime",
+      "sha256": "40a9392c04f3d5248acbbd81fd9db784e559862dcec1d0d86435de47423cfec3"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/FixedMinimum.lean",
+      "upstream_sha256": "4d446bbd1831f1c1c8149fead933db3aa3b29d0343f62d711a3060dc09939e77",
+      "path": "GAC/Persistence/Approximation/Layers/Labels.lean",
+      "module": "GAC.Persistence.Approximation.Layers.Labels",
+      "sha256": "e2366b2e343f38a2c575b281ac93a77276060a0d25f4a6d21c75a50ead441176"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/FixedMinimumCertificate.lean",
+      "upstream_sha256": "f3aa253694ba94c3abb845da6dc965de68b0ea76b89895d21b5b7ba6597f0220",
+      "path": "GAC/Persistence/Approximation/Layers/ConstantLabels.lean",
+      "module": "GAC.Persistence.Approximation.Layers.ConstantLabels",
+      "sha256": "92304fbe41171c8d869217f26de16288d580d9aa5d1588c1322d3cce71d7bf20"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/FixedMinimumEstimates.lean",
+      "upstream_sha256": "b5b7e6a144409b174e182a63a0bfa58c424cc0dde7eb73767d282036d52fce67",
+      "path": "GAC/Persistence/Approximation/Layers/RelativeEstimates.lean",
+      "module": "GAC.Persistence.Approximation.Layers.RelativeEstimates",
+      "sha256": "6cd0582096cc0aa65229aa53ca33671226900d66b7b923e9344dfc1fdbccf1a0"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/GlueCurves.lean",
+      "upstream_sha256": "8628af70f243fa3b1c8773849a0348eb8d8ee7b3df2725d595e44a447207c300",
+      "path": "GAC/Persistence/ODE/PiecewiseDerivative.lean",
+      "module": "GAC.Persistence.ODE.PiecewiseDerivative",
+      "sha256": "50d4825d0032f452c4ae0f37794b9a106bbd49e615ebe6e939f73df1147b96b3"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/GlueLocalCertificates.lean",
+      "upstream_sha256": "d904dae482e5637ba1d177c16ec2cb53b163f19cbf81ebb33e76f1c9e74b1956",
+      "path": "GAC/Persistence/Approximation/Gluing/LocalToGlobal.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.LocalToGlobal",
+      "sha256": "01707d701c4537eca741fd8f635561428c73b757dd4588041e36f72eb93de25d"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/IntervalChain.lean",
+      "upstream_sha256": "3f723b94b249f553365b37bf34b9cca055f012481a5db6340261825eb8202eaa",
+      "path": "GAC/Persistence/Approximation/Gluing/IntervalChains.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.IntervalChains",
+      "sha256": "8d3a9f15bde4a248c896fde807a9fd1d829f0ec787282ad1c2f2031c1e14e321"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/IntervalGluing.lean",
+      "upstream_sha256": "265287d8be8e6b66d8546af803d1d8773d1c1987b1b8b0aaa5f7e3f85393c2b2",
+      "path": "GAC/Persistence/Approximation/Gluing/OrderedCovers.lean",
+      "module": "GAC.Persistence.Approximation.Gluing.OrderedCovers",
+      "sha256": "626dbc10a46b4f11211a846b37f108586b41f8dab87de8c2fc03b996f6bfacfc"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/LabelTrajectory.lean",
+      "upstream_sha256": "43defebb0d753e6ac619a99318bfe07160cae04795cbc7e288ab3998184f5e18",
+      "path": "GAC/Persistence/Confinement/LabelTrapping.lean",
+      "module": "GAC.Persistence.Confinement.LabelTrapping",
+      "sha256": "da8b4cb87b19acadd823781496fc2f9b09cc758ac9cdde32d36bc4066381723d"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/LayerSequence.lean",
+      "upstream_sha256": "87cea1de8b315d353d5568ac37c13669c70c16996af670f05c7ab63c5789e28f",
+      "path": "GAC/Persistence/Approximation/Layers/LayerChain.lean",
+      "module": "GAC.Persistence.Approximation.Layers.LayerChain",
+      "sha256": "8d78fadc3a5dd30e4029d3b179be7e4b08cb4c31690fa9e680dbc68aa4e6eef5"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/LocalCertificateRadius.lean",
+      "upstream_sha256": "cb305484bee0f0e5eb531c76f31585ab15e75b34001e1c06f5552fb6888b5b55",
+      "path": "GAC/Persistence/Approximation/Local/CertificateRadius.lean",
+      "module": "GAC.Persistence.Approximation.Local.CertificateRadius",
+      "sha256": "59d155eabf9f030a3bdea991b47f0eb7ca1fe46a159ec89aad92b343092b1e03"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/LocalExistence.lean",
+      "upstream_sha256": "4f173b333a65c79d4695e28aaa89a9876c44ad880d34c9713663af6d73131e95",
+      "path": "GAC/Persistence/ODE/LocalSolutions.lean",
+      "module": "GAC.Persistence.ODE.LocalSolutions",
+      "sha256": "3badcf8be3492237409e38dcfcf0a7ac510b85457453a110d2a8bdce8bdc9a91"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/Main.lean",
+      "upstream_sha256": "60df46a3e981c51183ef9fd7d246d3c2026e508c0c5a33836cdf1a668ca821ca",
+      "path": "GAC/Persistence/BoundedPersistence.lean",
+      "module": "GAC.Persistence.BoundedPersistence",
+      "sha256": "c61a0f1ce609eb0e87defe1bcef00ee2bb7f8a499a393d470434d9dd9bd5425e"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/MassActionDot.lean",
+      "upstream_sha256": "d1815c581540eb9d446c14e01948a9cc5ef26b58b127e322723b255d0ca7732d",
+      "path": "GAC/Persistence/Model/LinearFunctionals.lean",
+      "module": "GAC.Persistence.Model.LinearFunctionals",
+      "sha256": "df20a60e153d025a274e5a680dc000f9e87252c77fd8c57e621e680b1c0d9a36"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/MassActionFlux.lean",
+      "upstream_sha256": "388beb813c8a75e4277a63aece0d1d040237fa737e0495194d35312393b3a1b3",
+      "path": "GAC/Persistence/Flux/InwardDirections.lean",
+      "module": "GAC.Persistence.Flux.InwardDirections",
+      "sha256": "c5999ec39054073cfab79cb22a82622400541f87c83e07497b65f7be2c0b6013"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/MassActionRegularity.lean",
+      "upstream_sha256": "fe40f3fb7ced140d9d8129712c10daf7bfe2e288b19a22c9aeae11ce4130fd0f",
+      "path": "GAC/Persistence/Model/Smoothness.lean",
+      "module": "GAC.Persistence.Model.Smoothness",
+      "sha256": "650751b9a3057c67956c39049b7c98989ddb0b466af12fc13a1f90efb8ec2d12"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/Model.lean",
+      "upstream_sha256": "a9d86f6faa923fcfaf9e300ecf9a3f3ad221e0d32dcd90a03a52d46aac36858a",
+      "path": "GAC/Persistence/Model/Network.lean",
+      "module": "GAC.Persistence.Model.Network",
+      "sha256": "7eb5d10cfa5af561d12a3f309ade6fbdcc87dc4c9461836d7d73c89055f8183b"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/MonomialOrder.lean",
+      "upstream_sha256": "fcbcd2345496456fcb5c812fc2daf9cd61ab4c9426e4ede790deb904581e78f4",
+      "path": "GAC/Persistence/Asymptotics/MonomialComparison.lean",
+      "module": "GAC.Persistence.Asymptotics.MonomialComparison",
+      "sha256": "c1b4c4faeaef122d7478eb5db0ae792077483a05b0d92fc9b5af3ae4ad4ebb02"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/NetworkApproximation.lean",
+      "upstream_sha256": "e9802e6535773f098e7875e5d547520d898dbdcf04e367a0a67ce9f58f33302c",
+      "path": "GAC/Persistence/Barrier/FiniteLabelData.lean",
+      "module": "GAC.Persistence.Barrier.FiniteLabelData",
+      "sha256": "fa18141c47686d8585e4a5bec231c6b3f49febded680a996240231c53de53112"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/NetworkBarrier.lean",
+      "upstream_sha256": "fdb54812deaabd3fb0bdd3aeb73d85a2ac9180d7b032f49f59c53c13e2a766a3",
+      "path": "GAC/Persistence/Barrier/Construction.lean",
+      "module": "GAC.Persistence.Barrier.Construction",
+      "sha256": "b97523ea3b8a7162f66120a08f06627f48e64e295e73fcd169d733bfccb8c27a"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/ODEConcatenation.lean",
+      "upstream_sha256": "b8490b5cfaccd2f5692694dc9d22cc274a4464b8faa8a9102a1da22ca881ef78",
+      "path": "GAC/Persistence/ODE/Concatenation.lean",
+      "module": "GAC.Persistence.ODE.Concatenation",
+      "sha256": "fcbb8447bfc42bff418a0ed60098acc9b8a43d11fa4fa56d73823a0c5f4ae6ba"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/ODEGlobal.lean",
+      "upstream_sha256": "868f00977232afe442a4298ae61e613fc8c9f481f405b27ce6eeb49c143d5e61",
+      "path": "GAC/Persistence/ODE/GlobalExtension.lean",
+      "module": "GAC.Persistence.ODE.GlobalExtension",
+      "sha256": "0a7bc2570c7da3476f9b76f286d9595405b277d5d3aa62ce0ad0fbdf175c760f"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/ODEUniqueness.lean",
+      "upstream_sha256": "0af74f89341a14cdd74077757f1daee44f3644bf54385ad604e7bcbd613c3c60",
+      "path": "GAC/Persistence/ODE/Uniqueness.lean",
+      "module": "GAC.Persistence.ODE.Uniqueness",
+      "sha256": "d7749a2c71a98ff6169fa7bc228c485df491dd73b4ec189d05d3d0ea5fabf4a3"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/PlateauCertificate.lean",
+      "upstream_sha256": "213a0616cbf6f10803501d23136e421670476a9487e74aca0184ef06afc0306a",
+      "path": "GAC/Persistence/Barrier/ConstantBranch.lean",
+      "module": "GAC.Persistence.Barrier.ConstantBranch",
+      "sha256": "81deeeaa58dff59caf8a608440f671125a3517b1e65ea0faeec955d36ff04cf3"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/PlateauGeometry.lean",
+      "upstream_sha256": "49b9310fa6cdb5890462ae4770f67949b579c56cbe1eac42f2c0c6e613eb8b44",
+      "path": "GAC/Persistence/Barrier/PlateauTopology.lean",
+      "module": "GAC.Persistence.Barrier.PlateauTopology",
+      "sha256": "9de42b7ecd54c25101c4a6895f59029c0bd1baaa45e711c89c95074f4ab47b63"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/PolyhedronGeometry.lean",
+      "upstream_sha256": "0b61dfbf4a21c4cf1d98db5594b1710230397e57a0f5d3b79641f1c21f96ea97",
+      "path": "GAC/Persistence/Barrier/Polyhedra.lean",
+      "module": "GAC.Persistence.Barrier.Polyhedra",
+      "sha256": "b9a7a4add1852e5428b4b320b0a9660bb1927846895b14684d5140cae7c2437c"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/PowerAsymptotics.lean",
+      "upstream_sha256": "77cbab5720a69bdd8a50917cbc8846222d5a1058e11ed6acd210ae29b238d042",
+      "path": "GAC/Persistence/Asymptotics/PowerRatios.lean",
+      "module": "GAC.Persistence.Asymptotics.PowerRatios",
+      "sha256": "8a55c8fe64770fe274bd9de3301d6a82eba28837d2a6e328535b9422e89dc152"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/ReciprocalBox.lean",
+      "upstream_sha256": "d3b96276da67ca95385b3c222be1479cf61663f40ed14c61ad8cdd92ca9b3e59",
+      "path": "GAC/Persistence/Barrier/LogBox.lean",
+      "module": "GAC.Persistence.Barrier.LogBox",
+      "sha256": "2c48daa33e5f8b38d7384fedf81552b97c6466b74cca39ca9ff0f2563810ec6b"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/SignTolerance.lean",
+      "upstream_sha256": "8f640b6731ab8888a08b7bbeaaa03c818ec2829f8092e09b89962037dceb6f0a",
+      "path": "GAC/Persistence/Asymptotics/SignMargins.lean",
+      "module": "GAC.Persistence.Asymptotics.SignMargins",
+      "sha256": "3a1a15b1f8239c09f2c641dd38049b5681cdf985a1db6bf0c0fce71df5970bb3"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/SmallParameter.lean",
+      "upstream_sha256": "3399d0b4373442610bb3110b9e4def5589f16fef55a7b05b1096c9172dc5a4e9",
+      "path": "GAC/Persistence/Asymptotics/ParameterChoice.lean",
+      "module": "GAC.Persistence.Asymptotics.ParameterChoice",
+      "sha256": "b97cdbedb179516c7f340007577f927e8f01d1b1fccd4da4a1794fdad5901be5"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/SolutionUniqueness.lean",
+      "upstream_sha256": "89cbc46e764b42c4c989e8f5135c400b6c0c911d6d695856ada4d30235e36e0b",
+      "path": "GAC/Persistence/ODE/TrajectoryUniqueness.lean",
+      "module": "GAC.Persistence.ODE.TrajectoryUniqueness",
+      "sha256": "9927a8bffb8472b0306edb17446075d16da9943b99050ad2adc141b92e5f87e0"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/TypeFamily.lean",
+      "upstream_sha256": "e65e0832eae0ab1428533a242b077527fcfe2a8b1dc59c7f489045178fec2f2b",
+      "path": "GAC/Persistence/Approximation/Layers/TypeFamilies.lean",
+      "module": "GAC.Persistence.Approximation.Layers.TypeFamilies",
+      "sha256": "90de3625b9099585634dab9081b16436eb76f37811ad51a81b82a59e060baee1"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/TypeFamilyCertificate.lean",
+      "upstream_sha256": "944743ae7887ecc6751bcbd236ff202fe487724059ce3dd51c7dc065cdbcaecf",
+      "path": "GAC/Persistence/Approximation/Layers/TypeLayers.lean",
+      "module": "GAC.Persistence.Approximation.Layers.TypeLayers",
+      "sha256": "992ed90b736626449879f5354658abff7f6cb077383da4f63bcfbda8f5e5886d"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/UniformActivity.lean",
+      "upstream_sha256": "42934ef300bc57d7a6e02280693324681d5e302107f167180d0d7644be311855",
+      "path": "GAC/Persistence/Approximation/Uniform/SequentialBounds.lean",
+      "module": "GAC.Persistence.Approximation.Uniform.SequentialBounds",
+      "sha256": "0dda089fb98fbd16f43501fedfef77052b72d0aa1f92fb3682553225125f5e54"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/UniformAffineData.lean",
+      "upstream_sha256": "8e37a8042964b978df8b3b2bf38ba6eb8a3c689454e9153e9723b79df6777ca8",
+      "path": "GAC/Persistence/Approximation/Uniform/UniformData.lean",
+      "module": "GAC.Persistence.Approximation.Uniform.UniformData",
+      "sha256": "3b6fdc86bf7f6610f5d6a018c401bc1e85c86aa29c752c4ef959be9078b461b2"
+    },
+    {
+      "upstream": "OAI/Analysis/MassAction/UniformOffsetDecay.lean",
+      "upstream_sha256": "b35c02686feaae5698d5c67ce064cff18765bbb9a4d2ab0b93a01ee0fa07c27f",
+      "path": "GAC/Persistence/Approximation/Local/OffsetDecay.lean",
+      "module": "GAC.Persistence.Approximation.Local.OffsetDecay",
+      "sha256": "828a0945a017dfb84139672bdd01260c2f6e46e86b3cbc112ef6681640192839"
+    }
+  ]
+}

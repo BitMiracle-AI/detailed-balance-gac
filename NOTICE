@@ -1,0 +1,10 @@
+detailed-balance-gac
+Copyright 2026 BitMiracle AI Lab
+
+The 71 modules under lean/GAC/Persistence/ are adapted from openai/math,
+commit 1581d4cbdd69a0faf34b2089614fe2a814316a6a
+(https://github.com/openai/math), licensed under the Apache License 2.0.
+Modifications: module paths, namespaces and principal declaration names were
+changed; each adapted file starts with a notice naming its upstream file.
+The old/new paths and upstream/current SHA-256 hashes are listed in
+lean/docs/SOURCE_MAP.md and lean/docs/source-map.json.
